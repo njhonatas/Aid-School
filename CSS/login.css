@@ -1,0 +1,234 @@
+
+/* fontes da navbar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+   font-family: font-CiscoSans;
+   src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+ }
+
+ @font-face {
+   font-family: font-CiscoSans2;
+   src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+ }
+
+ /* paleta de cores da navbar*/
+
+ :root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --COR15:#F28157;
+   --COR16:#DB8244;
+   --COR17:#FF9A75;
+   --COR18:#BF6545;
+
+   
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+/* barra lateral*/
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+  
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: var(--cor8);
+  border-radius: 20px;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.container3 {
+  background-color: whitesmoke;
+  margin-top: 80px;
+  padding: 6px;
+  width: 350px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+  
+}
+.icone{
+    align-items: center;
+    height: 28%;
+    margin-top: 0px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.icone:hover {
+    transform: scale(1.1); /* aumenta a escala da imagem em 10% */
+    
+  }
+form {
+  position: absolute;
+  margin-top: 170px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+  font-size: 20px;
+  
+}
+.form-input {
+    margin: 10px 0;
+  }
+.buttonsForm {
+  margin-top: 10px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 #038C5A;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #038C5A, #a963f8);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 19px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+button[type="submit"] {
+  background: var(--COR1);
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 18px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+button[type="submit"]:hover {
+    transform: scale(1.0); /* aumenta a escala do botão em 10% */
+    background-color: whitesmoke;
+    border: 1px solid var(--COR1);
+    color: rgb(3, 3, 3);
+}
+button[type="submit2"] {
+    background: #323034;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  button[type="submit2"]:hover {
+    transform: scale(1.0); /* aumenta a escala do botão em 10% */
+    background-color: whitesmoke;
+    border: 1px solid var(--COR1);
+    color: rgb(0, 0, 0);
+}
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 16px;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  height: 280px;
+  padding: 0px 11px;
+  
+}
+
+.iPassword {
+  top: 97px;
+}
+/* icone nome */
+.icon {
+  position: absolute;
+  left: 0px; 
+  top: 43%;
+  transform: translateY(-50%);
+}
+p{
+  padding-top: 20px;
+  font-size: 17px;
+  text-align: center;
+}
+p a{
+  color: var(--COR1);
+}

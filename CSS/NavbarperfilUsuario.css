@@ -1,0 +1,260 @@
+/* fontes da navbar*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+   font-family: font-CiscoSans;
+   src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+ }
+
+ @font-face {
+   font-family: font-CiscoSans2;
+   src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+ }
+
+ /* paleta de cores da navbar*/
+
+ :root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --COR15:#F28157;
+   --COR16:#DB8244;
+   --COR17:#FF9A75;
+   --COR18:#BF6545;
+
+   
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* configurações navbar*/
+*{
+   font-family: var(--font-Cisco-regular);
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none !important;
+}
+
+h3{
+   color blue;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+.header .nav .perfil {
+   position: relative;
+   display: inline-block;
+}
+
+.header .nav .perfil .perfil-link {
+   display: flex;
+   align-items: center;
+   color: var(--COR7);
+   font-size: 1.8rem;
+   cursor: pointer;
+   margin: 0 2rem;
+}
+
+.header .nav .perfil .perfil-link:hover {
+   color: var(--COR1);
+}
+
+.header .nav .perfil .dropbar {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: var(--COR10);
+   border: var(--border);
+   border-top: 0;
+   padding: 1rem;
+   width: 200px;
+   display: none;
+}
+
+.header .nav .perfil .dropbar.active {
+   display: block;
+}
+
+.header .nav .perfil .dropbar p {
+   margin-bottom: 0.5rem;
+}
+
+.header .nav .perfil:hover .dropbar {
+   display: block;
+}
+
+/* navbar titulos */
+
+section{
+   padding:7rem 2rem;
+}
+
+ /*botões da navbar */
+.link-btn{
+   display: inline-block;
+   padding:1rem 3rem;
+   border-radius: 20px;
+   background-color: var(--COR1);
+   cursor: pointer;
+   font-size: 1.7rem;
+   color:var(--COR8);
+}
+/*botões houver */
+.link-btn:hover{
+   background-color: var(--COR7);
+   color:var(--COR8);
+   transform: scale(1.05);
+   transition: transform 0.2s ease-in-out;
+}
+
+/*navbar*/
+.header{
+   padding:2rem;
+   border-bottom: var(--border);
+}
+/*navbar ao decer a pagina */
+.header.active{
+   background-color: var(--COR10);
+   
+   border:0;
+   
+}
+/*logo img */
+.logo12{
+   height: 11vh;
+   margin: 0px;
+   margin-bottom: 0px;
+}
+.logo12:hover{
+   transform: scale(1.1);
+   transition: transform 0.2s ease-in-out;
+}
+
+/*logo texto */
+.header .logo{
+   font-size: 3rem;
+   color:var(--COR7);
+   
+}
+.header .logo:hover{
+   transform: scale(1.07);
+   transition: transform 0.2s ease-in-out;
+
+}
+/*logo texto */
+.header .logo span{
+   color:var(--COR1);
+}
+
+/*navbar titulos */
+.header .nav a{
+   text-transform: capitalize;
+   margin:0 2rem;
+   font-size: 1.8rem;
+   color:var(--COR7);
+}
+/*navbar titulos houver */
+.header .nav a:hover{
+  color: var(--COR1);
+  
+}
+/*navbar titulos houver */
+.header .nav a:hover:hover {
+   background-size: 100% 2px;
+ }
+
+#menu-btn{
+   font-size: 2.5rem;
+   color:var(--COR1);
+   cursor: pointer;
+   display: none;
+}
+@media (max-width:768px){
+
+   section{
+      padding:3rem 1rem;
+   }
+
+   #menu-btn{
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+
+   .header .nav{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--COR10);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      padding:1rem 0;
+      text-align: center;
+      flex-flow: column;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .header .nav.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .nav a{
+      margin:1rem 0;
+      font-size: 2rem;
+   }
+
+   .home{
+      background-position: left;
+   }
+
+   .home .content{
+      width: auto;
+   }
+   .link-btn {
+      display: none;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .home .content h3{
+      font-size: 4rem;
+   }
+
+   .heading{
+      font-size: 3rem;
+   }
+   .link-btn {
+      display: none;
+   }
+   
+}

@@ -1,0 +1,184 @@
+:root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --COR15:#F28157;
+   --COR16:#DB8244;
+   --COR17:#FF9A75;
+   --COR18:#BF6545;
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.heading{
+   text-align: center;
+   font-size: 2rem;
+   color: var(--COR7);
+   text-transform: uppercase;
+   font-weight: bolder;
+   margin-bottom: 3rem;
+}
+/*titulos do body*/
+.heading:hover {
+   transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+ }
+
+ .heading::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 2px;
+  background-color: var(--COR11);
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.containerlistar .fa-arrow-left a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Icones */
+
+.fa-pencil-alt {
+  color: rgb(0, 0, 0);
+}
+
+.fa-ban {
+  color: rgb(0, 0, 0);
+}
+.fa-ban:hover{
+  color: rgb(196, 3, 3);
+}
+
+.fa-trash-alt {
+  color: rgb(0, 0, 0);
+}
+.fa-trash-alt:hover{
+  color: rgb(255, 12, 12);
+}
+
+
+/* Estilo para o contêiner da tabela */
+.containerlistar {
+ 
+  width: 95%;
+  font-size: 14px;
+  margin: 140 auto;
+  padding: 10px;
+  border: 1px solid #0000001e;
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow:var(--box-shadow);
+ 
+}
+
+/* Estilo da tabela */
+table {
+  width: 80%;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Estilo do cabeçalho da tabela */
+thead {
+  background-color: var(--COR12);
+  color: white;
+  
+}
+
+thead th {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;  
+}
+
+/* Estilo das células da tabela */
+tbody td {
+  padding: 10px;
+  
+}
+
+/* Estilo das células da tabela na primeira coluna */
+tbody td:first-child {
+  font-weight: bold;
+  border-collapse: collapse;
+}
+
+/* Estilo para links dentro da tabela */
+tbody a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Estilo para links quando passar o mouse */
+tbody a:hover {
+  text-decoration: none;
+  color: #cf1908;
+}
+
+/* Estilo para ícones dentro da tabela */
+tbody i {
+  margin-right: 5px;
+}
+
+
+
+/* Estilo para a barra de pesquisa do DataTables */
+.dataTables_wrapper .dataTables_filter {
+  text-align: right;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.dataTables_wrapper .dataTables_filter input[type="search"] {
+  padding: 5px;
+  border: 1px solid #040404;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.dataTables_wrapper .dataTables_length {
+  margin-top: 0px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* Estilo para a paginação do DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 5px;
+  border: 1px solid #000000;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #43803E;
+  color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #43803E;
+  color: #fff;
+}
+

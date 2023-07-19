@@ -1,0 +1,176 @@
+/* fontes da navbar*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+   font-family: font-CiscoSans;
+   src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+ }
+
+ @font-face {
+   font-family: font-CiscoSans2;
+   src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+ }
+:root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* CadastroDoacao.css */
+
+.left-button {
+        float: left;
+        margin-right: 10px;
+        background-color: var(--COR7); /* Cor de fundo do botão */
+        border: none; /* Remove a borda */
+        color: var(--COR8); /* Cor do texto do botão */
+        padding: 10px 20px; /* Adiciona um espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        text-decoration: none; /* Remove a decoração de link */
+        display: inline-block; /* Torna o botão um bloco para poder definir largura e altura */
+        font-size: 25px; /* Tamanho da fonte */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+        margin-top: 0px;
+        width: 150px; /* Defina a largura desejada */
+}
+
+.left-button:hover{
+    background-color: rgb(64, 61, 61);
+    color: var(--COR8);
+}
+.right-button {
+        float: right;
+        margin-left: 10px;
+}
+
+body {
+  
+  background-color: white;
+}
+
+.form-container {
+ background-color: white;
+ display: fixed;
+  width: 750px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  border-radius: 20px;
+  height: 580px;
+  color: black;
+  transform: scale(0.70);
+
+}
+
+.form-title {
+  color: var(--COR7);
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--font-Cisco-bold);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--COR1);
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group2 {
+  margin-bottom: 10px;
+}
+
+.radio-label {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
+
+.left-button {
+        float: left;
+        margin-right: 10px;
+        background-color: var(--COR7); /* Cor de fundo do botão */
+        border: none; /* Remove a borda */
+        color: var(--COR8); /* Cor do texto do botão */
+        padding: 10px 20px; /* Adiciona um espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        text-decoration: none; /* Remove a decoração de link */
+        display: inline-block; /* Torna o botão um bloco para poder definir largura e altura */
+        font-size: 25px; /* Tamanho da fonte */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+        margin-top: 0px;
+        width: 150px; /* Defina a largura desejada */
+}
+
+.left-button:hover{
+    background-color: rgb(64, 61, 61);
+    color: var(--COR8);
+}
+
+.right-button {
+        float: right;
+        margin-left: 10px;
+        background-color: var(--COR1); /* Cor de fundo do botão */
+        border: none; /* Remove a borda */
+        color: var(--COR8); /* Cor do texto do botão */
+        padding: 10px 20px; /* Adiciona um espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        text-decoration: none; /* Remove a decoração de link */
+        display: inline-block; /* Torna o botão um bloco para poder definir largura e altura */
+        font-size: 25px; /* Tamanho da fonte */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+        margin-top: 0px;
+        width: 150px;
+}
+
+.right-button:hover,
+.left-button:hover {
+  opacity: 0.8;
+}
+
+
+.form-group input[type="number"]{
+  width: 60%;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 13px;
+  margin-right: 10px;
+  color: black;
+}
+
+.form-group input[type="radio"] {
+    color: black;
+    margin-left: 0px;
+    margin-right: 10px;
+ }

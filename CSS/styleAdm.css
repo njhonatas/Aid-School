@@ -1,0 +1,105 @@
+/* fontes da navbar*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+   font-family: font-CiscoSans;
+   src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+ }
+
+ @font-face {
+   font-family: font-CiscoSans2;
+   src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+ }
+
+ /* paleta de cores da navbar*/
+
+ :root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --COR15:#F28157;
+   --COR16:#DB8244;
+   --COR17:#FF9A75;
+   --COR18:#BF6545;
+
+   
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* configurações navbar*/
+
+html { 
+   background-color: white;
+}
+
+.page-container {
+   background-color:  white;
+}
+/*  serviços - backgound */
+.services{
+   margin-top: 140px;
+    height:79vh;
+    margin-bottom: 0%;
+    margin-bottom: 10px;
+ }
+ 
+ /*  serviços - container maior */
+ .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;  
+ }
+
+ .box:hover{
+   transform: scale(1.05);
+   transition: transform 0.2s ease-in-out;
+ }
+ /*  serviços - container menor */
+ .services .box-container .box{
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    background-color: var(--COR8);
+    
+ }
+
+ 
+ /*  serviços - container img */
+ .services .box-container .box img{
+    margin:1rem 0;
+    height: 4rem;
+    
+ }
+
+ .services .box-container .box img:hover{
+   transform: scale(1.09);
+   transition: transform 0.2s ease-in-out;  
+}
+ /* serviço - titulos h3 */
+ .services .box-container .box h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:var(--COR7);
+    
+ }
+
+ 

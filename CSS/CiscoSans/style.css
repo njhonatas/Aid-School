@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cisco Sans';
+    src: local('Cisco Sans Regular'), local('Cisco-Sans-Regular'),
+        url('CiscoSans.woff2') format('woff2'),
+        url('CiscoSans.woff') format('woff'),
+        url('CiscoSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

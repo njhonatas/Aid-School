@@ -1,0 +1,160 @@
+/* fontes da navbar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+   font-family: font-CiscoSans;
+   src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+ }
+
+ @font-face {
+   font-family: font-CiscoSans2;
+   src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+ }
+
+ /* paleta de cores da navbar*/
+
+ :root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --cor19:#24F205;
+   --cor20:#1dbf04;
+   --cor21:#078400;
+
+   
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* barra lateral*/
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+  
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+  
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: var(--COR11);
+  height: 200px;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    height: auto;
+  }
+  
+  h1 {
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+  }
+
+  h1:hover{
+    transform: scale(1.05);
+  }
+
+ .conteudo{
+  margin-top: 80px;
+ } 
+  
+  .section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.134);
+    max-width: 900px;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .section:hover {
+    transform: scale(1.01);
+  }
+
+  h2 {
+    font-family: var(--font-Cisco-bold);
+    text-align: center;
+    color: var(--COR11);
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #333333;
+    text-align: justify;
+    
+  }
+  
+  li {
+    list-style: none;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    
+  }
+
+  .linkajuda{
+    margin-top: 15px ;
+    text-decoration: none;
+    color: var(--COR11);
+  }
+  
+  h3 {
+    color: var(--COR12);
+  }
+  
+  ul.contatos {
+    list-style: none;
+    margin-left: 20px;
+    color: #333333;
+    text-align: center;
+  }
+  
+  ul.contatos li {
+    margin-bottom: 5px;
+  }
+  
+  ul.contatos li a {
+    text-decoration: none;
+    color: var(--COR11);
+    margin-right: 10px;
+  }
+  
+  ul.contatos li a i {
+    margin-right: 5px;
+  }
+  
+  ul.contatos li a:hover {
+    color: var(--COR12);
+  }
+
+  

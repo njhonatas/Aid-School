@@ -1,0 +1,109 @@
+:root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --COR15:#F28157;
+   --COR16:#DB8244;
+   --COR17:#FF9A75;
+   --COR18:#BF6545;
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.help img:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out; 
+}
+
+.help {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion{
+    margin: 0 0px;
+    padding: 15px;
+}
+.accordion-content:hover{
+     transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+.accordion .accordion-content{
+    margin: 5px 0;
+    height: 50px;
+    border-radius: 4px;
+    background: #026873;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+.accordion-content:nth-child(2){
+    text-align: center;
+    background-color: #dfe0e1;
+    border: 1px solid #dfe0e1;
+     border-radius: 8px;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+.accordion-content:nth-child(3){
+    background-color: #026873;
+     border-radius: 8px;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+.accordion-content:nth-child(4){
+    background-color: #dfe0e1;
+     border-radius: 8px;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.accordion-content.open{
+    padding-bottom: 10px;
+}
+.accordion-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+}
+.accordion-content.open header{
+    padding-top: 5px;
+    min-height: 10px;
+}
+.accordion-content header .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.accordion-content header i{
+    font-size: 15px;
+    color: #333;
+}
+.accordion-content .description{
+    height: 300px;
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+    text-align: left;
+}

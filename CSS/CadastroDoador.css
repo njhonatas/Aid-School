@@ -1,0 +1,261 @@
+/* fontes da navbar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+   font-family: font-CiscoSans;
+   src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+ }
+
+ @font-face {
+   font-family: font-CiscoSans2;
+   src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+ }
+
+ /* paleta de cores da navbar*/
+
+ :root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* barra lateral*/
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+  
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+  
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: var(--COR1);
+  height: 200px;
+}
+
+
+body{
+  height: auto;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.form-container {
+  display: fixed;
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 140px;
+  border: 1px solid #ccc;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  border-radius: 20px;
+  height: 590px;
+  
+}
+
+.form-title {
+  color: var(--COR7);
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--font-Cisco-bold);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--COR1);
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  width: 1100px;
+  
+}
+
+.form-group label {
+  width: 220px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  text-align: left;
+  margin-left: 15px;
+  line-height: 35px;
+  
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea,
+.form-group input[type="file"],
+.form-group input[type="email"], 
+.form-group input[type="tel"],
+.form-group input[type="number"]{
+  width: 40%;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 13px;
+}
+
+.form-group input[type="file"] {
+  margin-top: 5px;
+  
+}
+
+.select-form{
+  width: 15%;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 13px;
+  color: #7e7d7d;
+}
+
+/* botão tipo input */
+input[type="submit"] {
+
+  background-color: var(--COR1); /* Cor de fundo do botão */
+        border: none; /* Remove a borda */
+        color: var(--COR8); /* Cor do texto do botão */
+        padding: 10px 20px; /* Adiciona um espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        text-decoration: none; /* Remove a decoração de link */
+        display: inline-block; /* Torna o botão um bloco para poder definir largura e altura */
+        font-size: 25px; /* Tamanho da fonte */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+        margin-top: 0px;
+        width: 150px; /* Defina a largura desejada */
+  
+}
+
+/* Adiciona estilo quando o cursor do mouse estiver sobre o botão */
+input[type="submit"]:hover {
+  background-color: var(--COR3);
+  color: var(--COR8);
+}
+
+
+.left-button {
+        float: left;
+        margin-right: 10px;
+        background-color: var(--COR7); /* Cor de fundo do botão */
+        border: none; /* Remove a borda */
+        color: var(--COR8); /* Cor do texto do botão */
+        padding: 10px 20px; /* Adiciona um espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        text-decoration: none; /* Remove a decoração de link */
+        display: inline-block; /* Torna o botão um bloco para poder definir largura e altura */
+        font-size: 25px; /* Tamanho da fonte */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+        margin-top: 0px;
+        width: 150px; /* Defina a largura desejada */
+}
+
+.left-button:hover{
+    background-color: rgb(64, 61, 61);
+    color: var(--COR8);
+}
+.right-button {
+        float: right;
+        margin-left: 10px;
+}
+
+/* Para dispositivos com largura menor ou igual a 480px (celulares em geral) */
+@media only screen and (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group input[type="file"],
+  .form-group input[type="email"], 
+  .form-group input[type="tel"] {
+    width: 20%;
+    margin-top: 5px;
+  }
+
+  input[type="submit"] {
+    font-size: 18px;
+  }
+}
+
+/* Para dispositivos com largura menor ou igual a 768px (tablets em geral) */
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group input[type="file"],
+  .form-group input[type="email"], 
+  .form-group input[type="tel"] {
+    width: 40%;
+    margin-top: 5px;
+  }
+
+  input[type="submit"] {
+    font-size: 20px;
+  }
+}
+

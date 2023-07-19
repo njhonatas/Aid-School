@@ -1,0 +1,182 @@
+
+:root{
+      
+   --COR1:#43803E;
+   --COR2:#6BCC62;
+   --COR3:#145a0e;
+   --COR4:#338b5f;
+   --COR7:#1F2024;
+   --COR8:#ffffff;
+   --COR10:#e7e7e7;
+   --COR11:#024059;
+   --COR12:#026873;
+   --COR13:#0CABA8;
+   --COR14:#015958;
+   --COR15:#F28157;
+   --COR16:#DB8244;
+   --COR17:#FF9A75;
+   --COR18:#BF6545;
+      --font-Opensans: Open Sans, sans-serif;
+      --font-Cisco-bold: font-CiscoSans;
+      --font-Cisco-regular: font-CiscoSans2;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  color: black;
+}
+
+input::placeholder {
+  /* Defina a cor do placeholder aqui */
+  color: black;
+}
+
+/* barra lateral*/
+
+*::-webkit-scrollbar{
+  height: .1rem;
+  width: 10px;
+  
+}
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: var(--COR1);
+  border-radius: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.container3 {
+  background-color: rgb(240, 239, 239);
+  padding: 16px;
+  margin-top: 10px;
+  width: 380px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+  
+  
+}
+.icone{
+    align-items: center;
+    height: 19%;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.icone:hover {
+    transform: scale(1.1); /* aumenta a escala da imagem em 10% */ 
+  }
+  
+form {
+  position: absolute;
+  margin-top: 105px;
+  transition: .5s;
+  width: 300px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 19px;
+  border-radius: 60px;
+  padding: 9px 0 8px 35px;
+  outline: none;
+  width: 100%;
+  background-color: white;
+}
+  
+button[type="submit"] {
+  background: var(--COR1);
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.0); /* aumenta a escala do botão em 10% */
+    background-color: whitesmoke;
+    border: 1px solid var(--COR1);
+    color: rgb(3, 3, 3);
+}
+
+i {
+  position: absolute;
+  left: 0;
+  height: 242px;
+  padding: 0px 11px;
+  
+}
+
+.iPassword {
+  top: 99px;
+}
+
+.iPassword2{
+  top: 163px;
+  margin-right: 55px;
+}
+
+.icon {
+  position: absolute;
+  left: 0px; 
+  top: 36%;
+  transform: translateY(-50%);
+}
+
+p{
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  
+}
+p a{
+  color: var(--COR1);
+}
+
+.select-form {
+  margin-top: 20px;
+}
+
+.select-form select {
+  width: 100%;
+  text-align: center;
+  padding: 9px 0 8px 0px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+}
+

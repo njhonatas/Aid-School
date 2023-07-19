@@ -1,0 +1,46 @@
+.containerlistar {
+  width: 90%;
+  margin-top: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+table tr:first-child {
+  background-color: var(--COR2);
+  color: white;
+}
+
+table tr:not(:first-child) {
+  background-color: var(--COR10);
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #000000;
+  color: #0f0f0f;
+  
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-pen {
+  color: rgb(53, 168, 207);
+}
+
+.fa-eraser {
+  color: red;
+}

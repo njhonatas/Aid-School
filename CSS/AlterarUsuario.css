@@ -1,0 +1,179 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  color: black;
+}
+
+input::placeholder {
+  /* Defina a cor do placeholder aqui */
+  color: black;
+}
+
+/* barra lateral*/
+
+*::-webkit-scrollbar{
+  height: .2rem;
+  width: 1rem;
+  
+}
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: var(--COR1);
+  border-radius: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.container3 {
+  background-color: rgb(240, 239, 239);
+  padding: 16px;
+  margin-top: 80px;
+  width: 350px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+  
+  
+}
+.icone{
+    align-items: center;
+    height: 20%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.icone:hover {
+    transform: scale(1.1); /* aumenta a escala da imagem em 10% */ 
+  }
+  
+form {
+  position: absolute;
+  margin-top: 125px;
+  transition: .5s;
+  width: 300px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 19px;
+  border-radius: 60px;
+  padding: 9px 0 8px 35px;
+  outline: none;
+  width: 100%;
+  background-color: white;
+}
+ 
+.left-button {
+  background: var(--COR7);
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.left-button:hover{
+    background-color: black;
+    color: white;
+}
+
+button[type="submit"] {
+  background: var(--COR1);
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.0); /* aumenta a escala do botão em 10% */
+    background-color: whitesmoke;
+    border: 1px solid var(--COR1);
+    color: rgb(3, 3, 3);
+}
+
+i {
+  position: absolute;
+  left: 0;
+  height: 103px;
+  padding: 0px 11px;
+  
+}
+
+.iPassword {
+  top: 99px;
+}
+
+.iPassword2{
+  top: 163px;
+  margin-right: 55px;
+}
+
+.icon {
+  position: absolute;
+  left: 0px; 
+  top: 26%;
+  transform: translateY(-50%);
+}
+
+p{
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  
+}
+p a{
+  color: var(--COR1);
+}
+
+.select-form {
+  margin-top: 20px;
+}
+
+.select-form select {
+  
+  width: 100%;
+  text-align: center;
+  padding: 9px 0 8px 0px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  color: #090909c8;
+  background-color: white;
+  
+}
+

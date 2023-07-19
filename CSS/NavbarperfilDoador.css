@@ -1,0 +1,177 @@
+
+/* Fontes da navbar */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+  font-family: font-CiscoSans;
+  src: url('../CSS/CiscoSans-Bold/CiscoSans-Bold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: font-CiscoSans2;
+  src: url('../CSS/CiscoSans/CiscoSans.ttf') format('opentype');
+}
+
+/* Paleta de cores da navbar */
+:root {
+  --COR1: #43803E;
+  --COR2: #6BCC62;
+  --COR3: #145a0e;
+  --COR4: #338b5f;
+  --COR7: #1F2024;
+  --COR8: #ffffff;
+  --COR10: #e7e7e7;
+  --COR11: #024059;
+  --COR12: #026873;
+  --COR13: #0CABA8;
+  --COR14: #015958;
+  --COR15: #F28157;
+  --COR16: #DB8244;
+  --COR17: #FF9A75;
+  --COR18: #BF6545;
+
+  --font-Opensans: Open Sans, sans-serif;
+  --font-Cisco-bold: font-CiscoSans;
+  --font-Cisco-regular: font-CiscoSans2;
+  --border: .2rem solid rgba(0, 0, 0, .1);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* barra lateral*/
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+   
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+   
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--COR1);
+   height: 200px;
+}
+
+/* Configurações da navbar */
+* {
+  font-family: var(--font-Cisco-regular);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+
+
+/* div perfil */
+.dropdown-toggle {
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.fa-sign-out-alt {
+  color: black;
+  font-size: 16px;
+}
+
+.navbardrop{
+    margin-right: 60px;
+}
+
+.dropdown-item {
+  background-color: white;
+  width: auto;
+  text-align: left;
+  font-size: 16px;
+  margin-right: 5px;
+   margin-left: 5px;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+  color: var(--COR1);
+  
+}
+
+/* Navbar títulos */
+section {
+  padding: 7rem 2rem;
+}
+
+/* Navbar */
+.header {
+  padding: 2rem;
+  border-bottom: var(--border);
+}
+
+/* Navbar ao rolar a página */
+.header.active {
+  background-color: var(--COR10);
+  border: 0;
+}
+
+.logo12{
+   height: 11vh;
+   margin: 0px;
+   margin-bottom: 0px;
+}
+.logo12:hover{
+   transform: scale(1.1);
+   transition: transform 0.2s ease-in-out;
+}
+
+/* Logo texto */
+.header .logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--COR7);
+  margin: 0;
+}
+
+.header .logo:hover{
+  transform: scale(1.13);
+}
+
+/* Logo texto */
+.header .logo span {
+  color: var(--COR1);
+}
+
+/* Navbar títulos */
+.header .nav a {
+  text-transform: capitalize;
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: var(--COR7);
+}
+
+/* Navbar títulos hover */
+.header .nav a:hover {
+  color: var(--COR1);
+}
+
+/* Navbar títulos hover */
+.header .nav a:hover:hover {
+  background-size: 100% 2px;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--COR1);
+  cursor: pointer;
+  display: none;
+}
